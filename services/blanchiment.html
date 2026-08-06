@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Blanchiment Dentaire — I Smile Dental Clinic | Dely Ibrahim</title>
+    <meta name="description" content="Blanchiment dentaire professionnel à Dely Ibrahim. Éclaircissement des dents en cabinet pour un sourire éclatant et naturel.">
+    <link rel="canonical" href="https://YOUR-PRODUCTION-DOMAIN.com/services/blanchiment">
+    <link rel="icon" type="image/png" href="../../images/favicon.png">
+    <meta property="og:title" content="Blanchiment Dentaire — I Smile Dental Clinic">
+    <meta property="og:description" content="Blanchiment professionnel pour un sourire éclatant.">
+    <meta property="og:image" content="cover.webp">
+    <meta property="og:url" content="https://YOUR-PRODUCTION-DOMAIN.com/services/blanchiment">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#1a3a34">
+    <meta name="robots" content="index, follow">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalBusiness",
+      "name": "I Smile Dental Clinic - Blanchiment",
+      "url": "https://YOUR-PRODUCTION-DOMAIN.com/services/blanchiment",
+      "medicalSpecialty": "Dentist",
+      "availableService": {
+        "@type": "MedicalProcedure",
+        "name": "Blanchiment Dentaire"
+      }
+    }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+    <link rel="stylesheet" href="../../css/animations.css">
+    <script defer src="../../js/script.js"></script>
+    <script defer src="../../js/gallery.js"></script>
+    <script defer src="../../js/form.js"></script>
+    <style>
+        .service-hero {
+            position: relative;
+            background: linear-gradient(135deg, #1a3a34 0%, #2d5a52 100%);
+            color: var(--white);
+            padding: 80px 0 60px;
+            text-align: center;
+            overflow: hidden;
+        }
+        .service-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('cover.webp') center/cover no-repeat;
+            opacity: 0.15;
+            z-index: 0;
+        }
+        .service-hero .container {
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+        }
+        .service-hero h1 {
+            font-size: clamp(2rem, 4vw, 2.8rem);
+            margin-bottom: 16px;
+            font-weight: 700;
+        }
+        .service-hero p {
+            font-size: 1.1rem;
+            opacity: 0.95;
+            line-height: 1.6;
+        }
+        .breadcrumb {
+            font-size: 0.95rem;
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 12px;
+        }
+        .breadcrumb a {
+            color: var(--teal);
+            text-decoration: none;
+        }
+        .service-section {
+            padding: 60px 0;
+        }
+        .service-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .service-content h2 {
+            font-size: 1.8rem;
+            color: var(--marble-green);
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        .service-content p {
+            margin-bottom: 16px;
+            line-height: 1.7;
+            color: var(--grey-text);
+        }
+        .service-content ul,
+        .service-content ol {
+            margin: 20px 0;
+            padding-left: 24px;
+        }
+        .service-content li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+            color: var(--grey-text);
+        }
+        .cta-box {
+            background: linear-gradient(135deg, #1a3a34 0%, #2d5a52 100%);
+            color: var(--white);
+            padding: 40px;
+            border-radius: var(--radius-md);
+            margin: 40px 0;
+            text-align: center;
+        }
+        .cta-box h3 {
+            font-size: 1.8rem;
+            margin-bottom: 16px;
+        }
+        .cta-box p {
+            font-size: 1.05rem;
+            margin-bottom: 24px;
+            opacity: 0.95;
+        }
+        .cta-buttons {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .ba-slider {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin: 40px auto;
+            overflow: hidden;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-soft);
+            user-select: none;
+        }
+        .ba-slider img {
+            width: 100%;
+            height: auto;
+            display: block;
+            pointer-events: none;
+        }
+        .ba-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%;
+            height: 100%;
+            overflow: hidden;
+            border-right: 3px solid var(--white);
+            box-shadow: 2px 0 8px rgba(0,0,0,0.3);
+        }
+        .ba-overlay img {
+            width: 100%;
+            max-width: none;
+            height: 100%;
+            object-fit: cover;
+        }
+        .ba-handle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 40px;
+            height: 40px;
+            background: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: ew-resize;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+            z-index: 10;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .ba-handle:hover,
+        .ba-slider.is-dragging .ba-handle {
+            transform: translate(-50%, -50%) scale(1.1);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+        }
+        .ba-handle i {
+            color: var(--marble-green);
+            font-size: 1.2rem;
+        }
+        .ba-label {
+            position: absolute;
+            bottom: 20px;
+            padding: 8px 16px;
+            background: rgba(0,0,0,0.7);
+            color: var(--white);
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            z-index: 5;
+        }
+        .ba-label-before {
+            left: 20px;
+        }
+        .ba-label-after {
+            right: 20px;
+        }
+        .gallery-section {
+            background: var(--stone-light);
+            padding: 60px 0;
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 20px;
+            margin-top: 30px;
+        }
+        @media (min-width: 768px) {
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        .gallery-item {
+            background: var(--white);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: var(--shadow-soft);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            object-position: center;
+            display: block;
+        }
+        .gallery-caption {
+            padding: 16px;
+            text-align: center;
+            font-size: 0.95rem;
+            color: var(--grey-text);
+            font-weight: 500;
+        }
+        .cta-section {
+            background: var(--marble-dark);
+            color: var(--white);
+            padding: 60px 0;
+            text-align: center;
+        }
+        .cta-section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 16px;
+        }
+        .cta-section p {
+            font-size: 1.05rem;
+            margin-bottom: 24px;
+            opacity: 0.95;
+        }
+        @media (max-width: 767px) {
+            .ba-slider {
+                max-width: 100%;
+            }
+            .ba-handle {
+                width: 36px;
+                height: 36px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+<header class="header" role="banner">
+    <div class="container header-content">
+        <a href="../../index.html" class="logo-custom" aria-label="I Smile Dental Clinic - Accueil">
+            <img src="../../images/i-smile-logo.png" alt="i-Smile Dental Clinic Logo" class="main-logo-img">
+        </a>
+        <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navMenu">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav class="nav-menu" id="navMenu" aria-label="Navigation principale">
+            <ul>
+                <li><a href="../../index.html#services">Services</a></li>
+                <li><a href="../../index.html#gallery">La Clinique</a></li>
+                <li><a href="../../index.html#contact">Urgences 24h/24</a></li>
+            </ul>
+            <div class="nav-phone-header">
+                <a href="tel:+213540992708" aria-label="Appeler le 05 40 99 27 08"><i class="fas fa-phone-alt"></i> 05 40 99 27 08</a>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<main id="main-content">
+    <section class="service-hero">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="../../index.html">Accueil</a> › <a href="../../index.html#services">Services</a> › Blanchiment
+            </nav>
+            <h1>Blanchiment Dentaire</h1>
+            <p>Éclaircissement professionnel des dents en cabinet pour un sourire éclatant, sûr et naturel.</p>
+        </div>
+    </section>
+
+    <section class="service-section">
+        <div class="container service-content">
+            <h2>Le blanchiment dentaire professionnel</h2>
+            <p>Le blanchiment dentaire est une technique esthétique qui permet d'éclaircir la couleur naturelle des dents de plusieurs teintes. Réalisé en cabinet par un professionnel, il garantit sécurité, efficacité et résultats durables.</p>
+            <p>Nous utilisons des produits de haute qualité à base de peroxyde d'hydrogène, activés par une lumière LED pour un blanchiment optimal sans sensibilité excessive.</p>
+
+            <h2>Déroulement de la séance</h2>
+            <ol>
+                <li><strong>Examen préalable :</strong> Vérification de l'état de santé bucco-dentaire.</li>
+                <li><strong>Nettoyage :</strong> Détartrage et polissage pour éliminer les taches superficielles.</li>
+                <li><strong>Protection :</strong> Application d'un gel protecteur sur les gencives.</li>
+                <li><strong>Application du gel blanchissant :</strong> Produit à base de peroxyde d'hydrogène.</li>
+                <li><strong>Activation LED :</strong> Accélération du processus de blanchiment.</li>
+                <li><strong>Rinçage et résultat :</strong> Dents immédiatement plus claires.</li>
+            </ol>
+
+            <h2>Résultats attendus</h2>
+            <ul>
+                <li><strong>Éclaircissement :</strong> Jusqu'à 3-8 teintes selon le cas.</li>
+                <li><strong>Durée :</strong> Résultats visibles immédiatement après la séance.</li>
+                <li><strong>Durée des résultats :</strong> 1 à 3 ans selon l'hygiène et l'alimentation.</li>
+                <li><strong>Sécurité :</strong> Aucun dommage pour l'émail ou les gencives.</li>
+            </ul>
+
+            <div class="ba-slider" id="baSlider">
+                <img src="avant-apres-blanchiment-2.webp" alt="Après blanchiment" loading="lazy">
+                <div class="ba-overlay" id="baOverlay">
+                    <img src="avant-apres-blanchiment-1.webp" alt="Avant blanchiment" loading="lazy">
+                </div>
+                <div class="ba-handle" id="baHandle" role="slider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" aria-label="Curseur de comparaison avant/après" tabindex="0">
+                    <i class="fas fa-arrows-alt-h"></i>
+                </div>
+                <span class="ba-label ba-label-before">Avant</span>
+                <span class="ba-label ba-label-after">Après</span>
+            </div>
+
+            <div class="cta-box">
+                <h3><i class="fas fa-magic" aria-hidden="true"></i> Un sourire éclatant vous attend</h3>
+                <p>Réservez votre séance de blanchiment et découvrez la différence.</p>
+                <div class="cta-buttons">
+                    <a href="tel:+213540992708" class="btn btn-primary"><i class="fas fa-phone-alt"></i> Prendre rendez-vous</a>
+                    <a href="https://wa.me/213562528806?text=Bonjour%20I%20Smile%2C%20je%20souhaite%20un%20rendez-vous%20pour%20blanchiment." target="_blank" rel="noopener" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                </div>
+            </div>
+
+            <h2>Contre-indications</h2>
+            <ul>
+                <li>Femmes enceintes ou allaitantes</li>
+                <li>Enfants de moins de 16 ans</li>
+                <li>Caries non traitées ou maladies parodontales</li>
+                <li>Dents très sensibles</li>
+                <li>Allergies aux produits de blanchiment</li>
+            </ul>
+
+            <h2>Conseils post-blanchiment</h2>
+            <ul>
+                <li><strong>Éviter les aliments colorants :</strong> Café, thé, vin rouge, curry, etc. pendant 48h.</li>
+                <li><strong>Arrêter le tabac :</strong> Au moins pendant 48h après le traitement.</li>
+                <li><strong>Utiliser un dentifrice blanchissant :</strong> Pour entretenir les résultats.</li>
+                <li><strong>Éviter les bains de bouche colorés :</strong> Privilégier les produits sans alcool.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="gallery-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Galerie <span class="brand-highlight">Blanchiment</span></h2>
+                <p class="section-desc">Exemples de résultats de blanchiment réalisés en cabinet.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="cover.webp" alt="Blanchiment dentaire - Cabinet" loading="lazy" decoding="async">
+                    <div class="gallery-caption">Cabinet de blanchiment</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="avant-apres-blanchiment-1.webp" alt="Avant blanchiment" loading="lazy" decoding="async">
+                    <div class="gallery-caption">Avant traitement</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="avant-apres-blanchiment-2.webp" alt="Après blanchiment" loading="lazy" decoding="async">
+                    <div class="gallery-caption">Après blanchiment professionnel</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Prêt à éclaircir votre sourire ?</h2>
+            <p>Consultez-nous pour une évaluation et un plan de blanchiment personnalisé.</p>
+            <div class="hero-actions">
+                <a href="tel:+213540992708" class="btn btn-primary"><i class="fas fa-phone-alt"></i> Appeler maintenant</a>
+                <a href="https://wa.me/213562528806?text=Bonjour%20I%20Smile%2C%20je%20souhaite%20un%20rendez-vous%20pour%20blanchiment." target="_blank" rel="noopener" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-content">
+            <p class="footer-credit">Website crafted by <a href="https://gategith.github.io/portfolio/" target="_blank" rel="noopener noreferrer" aria-label="Portfolio de REBAS IFILS">REBAS IFILS</a></p>
+            <p class="footer-tagline">Digital Experiences</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Before / After Slider
+    (function() {
+        const slider = document.getElementById('baSlider');
+        const overlay = document.getElementById('baOverlay');
+        const handle = document.getElementById('baHandle');
+        
+        if (!slider || !overlay || !handle) return;
+        
+        let isDragging = false;
+        
+        const setPosition = (percent) => {
+            const clamped = Math.max(0, Math.min(100, percent));
+            overlay.style.width = clamped + '%';
+            handle.style.left = clamped + '%';
+            handle.setAttribute('aria-valuenow', Math.round(clamped));
+        };
+        
+        const getPosition = (clientX) => {
+            const rect = slider.getBoundingClientRect();
+            const x = clientX - rect.left;
+            return (x / rect.width) * 100;
+        };
+        
+        const startDrag = (e) => {
+            isDragging = true;
+            slider.classList.add('is-dragging');
+            e.preventDefault();
+        };
+        
+        const onPointerMove = (e) => {
+            if (!isDragging) return;
+            setPosition(getPosition(e.clientX));
+        };
+        
+        const endDrag = () => {
+            isDragging = false;
+            slider.classList.remove('is-dragging');
+        };
+        
+        // Pointer events (mouse + touch + stylus)
+        handle.addEventListener('pointerdown', startDrag);
+        document.addEventListener('pointermove', onPointerMove);
+        document.addEventListener('pointerup', endDrag);
+        document.addEventListener('pointercancel', endDrag);
+        
+        // Touch support fallback
+        let touchMoveHandler = (e) => {
+            if (e.changedTouches && e.changedTouches[0]) {
+                setPosition(getPosition(e.changedTouches[0].clientX));
+            }
+        };
+        
+        handle.addEventListener('touchstart', (e) => {
+            isDragging = true;
+            document.addEventListener('touchmove', touchMoveHandler, { passive: true });
+            document.addEventListener('touchend', () => {
+                isDragging = false;
+                document.removeEventListener('touchmove', touchMoveHandler);
+            }, { once: true });
+        }, { passive: true });
+        
+        // Keyboard support
+        handle.addEventListener('keydown', (e) => {
+            const step = 5;
+            const current = parseFloat(overlay.style.width) || 50;
+            
+            if (e.key === 'ArrowLeft') {
+                setPosition(current - step);
+                e.preventDefault();
+            }
+            if (e.key === 'ArrowRight') {
+                setPosition(current + step);
+                e.preventDefault();
+            }
+        });
+        
+        // Click on slider to jump
+        slider.addEventListener('click', (e) => {
+            if (e.target !== handle) {
+                setPosition(getPosition(e.clientX));
+            }
+        });
+        
+        // Responsive: maintain percentage on resize
+        window.addEventListener('resize', () => {
+            const current = parseFloat(overlay.style.width) || 50;
+            setPosition(current);
+        }, { passive: true });
+        
+        // Initialize
+        setPosition(50);
+    })();
+</script>
+
+</body>
+</html>
