@@ -1,1 +1,350 @@
+/* === MOBILE FIRST (default) === */
+/* Base styles are already mobile-first in style.css */
 
+/* === TABLET (768px and up) === */
+@media (min-width: 768px) {
+    .header-content {
+        padding: 16px 40px;
+    }
+
+    .nav-menu ul {
+        gap: 32px;
+    }
+
+    .nav-phone-header {
+        display: block;
+        margin-left: 24px;
+    }
+
+    .services-premium-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 32px;
+    }
+
+    .gallery-editorial-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .gallery-item-large {
+        grid-column: span 2;
+    }
+
+    .gallery-item-medium {
+        grid-column: span 1;
+    }
+
+    .gallery-item-small {
+        grid-column: span 1;
+    }
+
+    .instagram-videos-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+    }
+
+    .video-card-wrapper {
+        aspect-ratio: 9 / 16;
+        max-height: 500px;
+    }
+
+    .reviews-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    .contact-3d-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 48px;
+    }
+
+    .floating-cta-wa {
+        bottom: 100px;
+        right: 40px;
+    }
+
+    .bottom-bar {
+        display: none;
+    }
+}
+
+/* === DESKTOP (1024px and up) === */
+@media (min-width: 1024px) {
+    .header-content {
+        padding: 20px 60px;
+    }
+
+    .main-logo-img {
+        height: 50px;
+    }
+
+    .nav-menu ul {
+        gap: 40px;
+    }
+
+    .services-premium-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+    }
+
+    .gallery-editorial-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+    }
+
+    .gallery-item-large {
+        grid-column: span 2;
+    }
+
+    .gallery-item-medium {
+        grid-column: span 1;
+    }
+
+    .gallery-item-small {
+        grid-column: span 1;
+    }
+
+    .instagram-videos-grid {
+        max-width: 1000px;
+    }
+
+    .reviews-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 28px;
+    }
+
+    .section-padding {
+        padding: clamp(80px, 10vw, 120px) 0;
+    }
+
+    .container {
+        padding: 0 40px;
+    }
+
+    .hero-subtitle {
+        font-size: 1.3rem;
+    }
+
+    .hero-actions {
+        gap: 16px;
+    }
+
+    .btn {
+        padding: 16px 32px;
+        font-size: 1rem;
+    }
+
+    .service-premium-cover {
+        height: 260px;
+    }
+
+    .service-premium-content {
+        padding: 32px;
+    }
+
+    .service-premium-content h3 {
+        font-size: 1.4rem;
+    }
+
+    .contact-info {
+        padding: 48px;
+    }
+
+    .form-container {
+        padding: 48px;
+    }
+
+    .floating-cta-wa {
+        bottom: 120px;
+        right: 60px;
+    }
+}
+
+/* === LARGE SCREENS (1440px and up) === */
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1400px;
+    }
+
+    .services-premium-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 48px;
+    }
+
+    .service-premium-cover {
+        height: 300px;
+    }
+
+    .section-title {
+        font-size: 3rem;
+    }
+
+    .gallery-editorial-grid {
+        gap: 32px;
+    }
+
+    .reviews-grid {
+        gap: 32px;
+    }
+
+    .floating-cta-wa {
+        right: 80px;
+    }
+}
+
+/* === EXTRA LARGE SCREENS (1920px and up) === */
+@media (min-width: 1920px) {
+    .container {
+        max-width: 1600px;
+    }
+
+    .section-padding {
+        padding: 120px 0;
+    }
+
+    .hero-subtitle {
+        font-size: 1.4rem;
+    }
+
+    .floating-cta-wa {
+        right: 100px;
+    }
+}
+
+/* === MOBILE NAVIGATION TOGGLE === */
+@media (max-width: 767px) {
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: var(--white);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        transform: translateY(-150%);
+        transition: transform 0.3s ease;
+        z-index: 999;
+        padding: 20px 0;
+    }
+
+    .nav-menu.active {
+        transform: translateY(0);
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+        gap: 0;
+        padding: 0 20px;
+    }
+
+    .nav-menu li {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu a {
+        display: block;
+        padding: 16px 0;
+        font-size: 1.1rem;
+    }
+
+    .nav-phone-header {
+        display: block;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .nav-phone-header a {
+        font-size: 1.1rem;
+    }
+}
+
+/* === HERO VIDEO iPHONE FIX === */
+@media screen and (max-width: 767px) {
+    .hero-video-section,
+    .video-container,
+    .video-wrapper {
+        height: 100dvh;
+        min-height: 100vh;
+    }
+}
+
+/* === VIDEO CARDS MOBILE === */
+@media (max-width: 767px) {
+    .instagram-videos-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .video-card-wrapper {
+        aspect-ratio: 9 / 16;
+        max-height: 400px;
+    }
+
+    .btn-instagram {
+        margin: 16px;
+    }
+}
+
+/* === GALLERY MOBILE === */
+@media (max-width: 767px) {
+    .gallery-editorial-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-item-large,
+    .gallery-item-medium,
+    .gallery-item-small {
+        grid-column: 1;
+    }
+}
+
+/* === CONTACT FORM MOBILE === */
+@media (max-width: 767px) {
+    .contact-3d-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info {
+        padding: 30px;
+    }
+
+    .form-container {
+        padding: 30px;
+    }
+
+    .contact-buttons {
+        flex-direction: column;
+    }
+
+    .contact-link {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* === REVIEWS MOBILE === */
+@media (max-width: 767px) {
+    .reviews-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* === SERVICES MOBILE === */
+@media (max-width: 767px) {
+    .services-premium-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* === REDUCED MOTION === */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
