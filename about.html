@@ -1,1 +1,296 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>À propos — I Smile Dental Clinic | Dely Ibrahim</title>
+    <meta name="description" content="À propos de I Smile Dental Clinic — notre équipe, notre mission et notre engagement envers des soins dentaires excellents à Dely Ibrahim.">
+    <link rel="canonical" href="https://YOUR-PRODUCTION-DOMAIN.com/about.html">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <meta property="og:title" content="À propos — I Smile Dental Clinic">
+    <meta property="og:description" content="Notre équipe, notre mission et notre engagement envers des soins dentaires excellents.">
+    <meta property="og:image" content="images/i-smile-logo.png">
+    <meta property="og:url" content="https://YOUR-PRODUCTION-DOMAIN.com/about.html">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#1a3a34">
+    <meta name="robots" content="index, follow">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalBusiness",
+      "name": "I Smile Dental Clinic",
+      "url": "https://YOUR-PRODUCTION-DOMAIN.com/about.html",
+      "logo": "https://YOUR-PRODUCTION-DOMAIN.com/images/i-smile-logo.png",
+      "description": "Clinique dentaire à Dely Ibrahim offrant des soins d'excellence."
+    }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <script defer src="js/script.js"></script>
+    <script defer src="js/form.js"></script>
+    <style>
+        .about-hero {
+            position: relative;
+            background: linear-gradient(135deg, #1a3a34 0%, #2d5a52 100%);
+            color: var(--white);
+            padding: 80px 0 60px;
+            text-align: center;
+        }
+        .about-hero .container {
+            max-width: 900px;
+        }
+        .about-hero h1 {
+            font-size: clamp(2rem, 4vw, 2.8rem);
+            margin-bottom: 16px;
+            font-weight: 700;
+        }
+        .about-hero p {
+            font-size: 1.1rem;
+            opacity: 0.95;
+            line-height: 1.6;
+        }
+        .about-section {
+            padding: 60px 0;
+        }
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+        @media (min-width: 768px) {
+            .about-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        .about-text h2 {
+            font-size: 1.8rem;
+            color: var(--marble-green);
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        .about-text p {
+            margin-bottom: 16px;
+            line-height: 1.7;
+            color: var(--grey-text);
+        }
+        .about-image img {
+            width: 100%;
+            height: auto;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-soft);
+            display: block;
+        }
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 24px;
+            margin-top: 30px;
+        }
+        @media (min-width: 768px) {
+            .values-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        .value-card {
+            background: var(--white);
+            padding: 24px;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-soft);
+            text-align: center;
+        }
+        .value-card i {
+            font-size: 2.2rem;
+            color: var(--teal);
+            margin-bottom: 16px;
+        }
+        .value-card h3 {
+            font-size: 1.2rem;
+            color: var(--marble-green);
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        .value-card p {
+            font-size: 0.95rem;
+            color: var(--grey-text);
+            line-height: 1.6;
+        }
+        .team-section {
+            background: var(--stone-light);
+            padding: 60px 0;
+        }
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 30px;
+            margin-top: 30px;
+        }
+        @media (min-width: 768px) {
+            .team-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        .team-card {
+            background: var(--white);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: var(--shadow-soft);
+            text-align: center;
+        }
+        .team-card img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            object-position: center top;
+            display: block;
+        }
+        .team-card h3 {
+            font-size: 1.3rem;
+            color: var(--marble-green);
+            margin: 20px 0 8px;
+            font-weight: 700;
+        }
+        .team-card p {
+            font-size: 0.95rem;
+            color: var(--grey-text);
+            padding: 0 20px 20px;
+            line-height: 1.6;
+        }
+        .cta-about {
+            background: var(--marble-dark);
+            color: var(--white);
+            padding: 50px 0;
+            text-align: center;
+        }
+        .cta-about h2 {
+            font-size: 1.8rem;
+            margin-bottom: 16px;
+        }
+        .cta-about p {
+            font-size: 1.05rem;
+            opacity: 0.95;
+            margin-bottom: 24px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    
+<header class="header" role="banner">
+    <div class="container header-content">
+        <a href="index.html" class="logo-custom" aria-label="I Smile Dental Clinic - Accueil">
+            <img src="images/i-smile-logo.png" alt="i-Smile Dental Clinic Logo" class="main-logo-img">
+        </a>
+        <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navMenu">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav class="nav-menu" id="navMenu" aria-label="Navigation principale">
+            <ul>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#gallery">La Clinique</a></li>
+                <li><a href="index.html#contact">Urgences 24h/24</a></li>
+            </ul>
+            <div class="nav-phone-header">
+                <a href="tel:+213540992708" aria-label="Appeler le 05 40 99 27 08"><i class="fas fa-phone-alt"></i> 05 40 99 27 08</a>
+            </div>
+        </nav>
+    </div>
+</header>
 
+<main id="main-content">
+    <section class="about-hero">
+        <div class="container">
+            <h1>À propos de I Smile</h1>
+            <p>Une clinique dentaire moderne à Dely Ibrahim, dédiée à l'excellence des soins et au bien-être de chaque patient.</p>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2>Notre Mission</h2>
+                    <p>Chez I Smile Dental Clinic, notre mission est de fournir des soins dentaires de la plus haute qualité dans un environnement confortable et rassurant. Nous croyons que chaque patient mérite une attention personnalisée et des traitements adaptés à ses besoins spécifiques.</p>
+                    <p>Notre équipe de professionnels expérimentés utilise les dernières technologies et techniques pour garantir des résultats optimaux, tout en priorisant votre confort et votre santé bucco-dentaire à long terme.</p>
+                </div>
+                <div class="about-image">
+                    <img src="gallery/espace-1.webp" alt="Cabinet I Smile - Réception" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="team-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Notre <span class="brand-highlight">Équipe</span></h2>
+                <p class="section-desc">Des professionnels passionnés et expérimentés.</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-card">
+                    <img src="images/dr-aibi.webp" alt="Dr. Aibi Saad" loading="lazy">
+                    <h3>Dr. Aibi Saad</h3>
+                    <p>Dentiste - Chirurgien Dentiste</p>
+                </div>
+                <div class="team-card">
+                    <img src="gallery/espace-2.webp" alt="Équipe I Smile en consultation" loading="lazy">
+                    <h3>Équipe I Smile</h3>
+                    <p>Assistants dentaires et personnel administratif dédiés à votre bien-être.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Nos <span class="brand-highlight">Valeurs</span></h2>
+                <p class="section-desc">Les principes qui guident notre pratique quotidienne.</p>
+            </div>
+            <div class="values-grid">
+                <div class="value-card">
+                    <i class="fas fa-heart" aria-hidden="true"></i>
+                    <h3>Bienveillance</h3>
+                    <p>Une approche humaine et attentive pour chaque patient, quel que soit son âge ou son besoin.</p>
+                </div>
+                <div class="value-card">
+                    <i class="fas fa-microscope" aria-hidden="true"></i>
+                    <h3>Excellence</h3>
+                    <p>Utilisation de technologies modernes et de techniques éprouvées pour des résultats optimaux.</p>
+                </div>
+                <div class="value-card">
+                    <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                    <h3>Sécurité</h3>
+                    <p>Protocoles d'hygiène stricts et matériel stérilisé pour garantir votre sécurité à chaque visite.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-about">
+        <div class="container">
+            <h2>Prenez rendez-vous aujourd'hui</h2>
+            <p>Nous sommes disponibles 24h/24 pour vos urgences dentaires. Contactez-nous pour une consultation ou un rendez-vous.</p>
+            <div class="hero-actions">
+                <a href="tel:+213540992708" class="btn btn-primary" aria-label="Appeler maintenant le 05 40 99 27 08"><i class="fas fa-phone-alt"></i> Appeler maintenant</a>
+                <a href="https://wa.me/213562528806?text=Bonjour%20I%20Smile%2C%20j%27aimerais%20prendre%20rendez-vous." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" aria-label="Contacter sur WhatsApp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-content">
+            <p class="footer-credit">Website crafted by <a href="https://gategith.github.io/portfolio/" target="_blank" rel="noopener noreferrer" aria-label="Portfolio de REBAS IFILS">REBAS IFILS</a></p>
+            <p class="footer-tagline">Digital Experiences</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
