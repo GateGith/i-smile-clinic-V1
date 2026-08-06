@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Prothèses Dentaires — I Smile Dental Clinic | Dely Ibrahim</title>
+    <meta name="description" content="Prothèses dentaires fixes et amovibles à Dely Ibrahim. Couronnes, ponts et implants pour restaurer fonction et esthétique.">
+    <link rel="canonical" href="https://YOUR-PRODUCTION-DOMAIN.com/services/protheses">
+    <link rel="icon" type="image/png" href="../../images/favicon.png">
+    <meta property="og:title" content="Prothèses Dentaires — I Smile Dental Clinic">
+    <meta property="og:description" content="Restauration complète avec prothèses dentaires sur mesure.">
+    <meta property="og:image" content="prothese-fixe-1.webp">
+    <meta property="og:url" content="https://YOUR-PRODUCTION-DOMAIN.com/services/protheses">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#1a3a34">
+    <meta name="robots" content="index, follow">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalBusiness",
+      "name": "I Smile Dental Clinic - Prothèses",
+      "url": "https://YOUR-PRODUCTION-DOMAIN.com/services/protheses",
+      "medicalSpecialty": "Dentist",
+      "availableService": {
+        "@type": "MedicalProcedure",
+        "name": "Prothèses Dentaires"
+      }
+    }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+    <link rel="stylesheet" href="../../css/animations.css">
+    <script defer src="../../js/script.js"></script>
+    <script defer src="../../js/gallery.js"></script>
+    <script defer src="../../js/form.js"></script>
+    <style>
+        .service-hero {
+            position: relative;
+            background: linear-gradient(135deg, #1a3a34 0%, #2d5a52 100%);
+            color: var(--white);
+            padding: 80px 0 60px;
+            text-align: center;
+            overflow: hidden;
+        }
+        .service-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('prothese-fixe-1.webp') center/cover no-repeat;
+            opacity: 0.15;
+            z-index: 0;
+        }
+        .service-hero .container {
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+        }
+        .service-hero h1 {
+            font-size: clamp(2rem, 4vw, 2.8rem);
+            margin-bottom: 16px;
+            font-weight: 700;
+        }
+        .service-hero p {
+            font-size: 1.1rem;
+            opacity: 0.95;
+            line-height: 1.6;
+        }
+        .breadcrumb {
+            font-size: 0.95rem;
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 12px;
+        }
+        .breadcrumb a {
+            color: var(--teal);
+            text-decoration: none;
+        }
+        .service-section {
+            padding: 60px 0;
+        }
+        .service-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .service-content h2 {
+            font-size: 1.8rem;
+            color: var(--marble-green);
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        .service-content p {
+            margin-bottom: 16px;
+            line-height: 1.7;
+            color: var(--grey-text);
+        }
+        .service-content ul,
+        .service-content ol {
+            margin: 20px 0;
+            padding-left: 24px;
+        }
+        .service-content li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+            color: var(--grey-text);
+        }
+        .cta-box {
+            background: linear-gradient(135deg, #1a3a34 0%, #2d5a52 100%);
+            color: var(--white);
+            padding: 40px;
+            border-radius: var(--radius-md);
+            margin: 40px 0;
+            text-align: center;
+        }
+        .cta-box h3 {
+            font-size: 1.8rem;
+            margin-bottom: 16px;
+        }
+        .cta-box p {
+            font-size: 1.05rem;
+            margin-bottom: 24px;
+            opacity: 0.95;
+        }
+        .cta-buttons {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .gallery-section {
+            background: var(--stone-light);
+            padding: 60px 0;
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 20px;
+            margin-top: 30px;
+        }
+        @media (min-width: 768px) {
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        .gallery-item {
+            background: var(--white);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: var(--shadow-soft);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            object-position: center;
+            display: block;
+        }
+        .gallery-caption {
+            padding: 16px;
+            text-align: center;
+            font-size: 0.95rem;
+            color: var(--grey-text);
+            font-weight: 500;
+        }
+        .case-study {
+            background: var(--white);
+            border-radius: var(--radius-md);
+            padding: 24px;
+            margin: 30px 0;
+            box-shadow: var(--shadow-soft);
+        }
+        .case-study h3 {
+            font-size: 1.4rem;
+            color: var(--marble-green);
+            margin-bottom: 16px;
+            font-weight: 700;
+        }
+        .case-study-grid {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 16px;
+            margin-top: 20px;
+        }
+        @media (min-width: 768px) {
+            .case-study-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        .case-study-grid img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: var(--radius-sm);
+            display: block;
+        }
+        .cta-section {
+            background: var(--marble-dark);
+            color: var(--white);
+            padding: 60px 0;
+            text-align: center;
+        }
+        .cta-section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 16px;
+        }
+        .cta-section p {
+            font-size: 1.05rem;
+            margin-bottom: 24px;
+            opacity: 0.95;
+        }
+    </style>
+</head>
+<body>
+    
+<header class="header" role="banner">
+    <div class="container header-content">
+        <a href="../../index.html" class="logo-custom" aria-label="I Smile Dental Clinic - Accueil">
+            <img src="../../images/i-smile-logo.png" alt="i-Smile Dental Clinic Logo" class="main-logo-img">
+        </a>
+        <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navMenu">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav class="nav-menu" id="navMenu" aria-label="Navigation principale">
+            <ul>
+                <li><a href="../../index.html#services">Services</a></li>
+                <li><a href="../../index.html#gallery">La Clinique</a></li>
+                <li><a href="../../index.html#contact">Urgences 24h/24</a></li>
+            </ul>
+            <div class="nav-phone-header">
+                <a href="tel:+213540992708" aria-label="Appeler le 05 40 99 27 08"><i class="fas fa-phone-alt"></i> 05 40 99 27 08</a>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<main id="main-content">
+    <section class="service-hero">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="../../index.html">Accueil</a> › <a href="../../index.html#services">Services</a> › Prothèses
+            </nav>
+            <h1>Prothèses Dentaires</h1>
+            <p>Restauration complète avec prothèses fixes et amovibles, couronnes, ponts et implants pour retrouver fonction et esthétique.</p>
+        </div>
+    </section>
+
+    <section class="service-section">
+        <div class="container service-content">
+            <h2>Types de prothèses dentaires</h2>
+            <p>Les prothèses dentaires permettent de remplacer une ou plusieurs dents manquantes. Nous proposons plusieurs solutions adaptées à chaque cas clinique :</p>
+            <ul>
+                <li><strong>Couronnes :</strong> Restauration complète d'une dent abîmée ou fracturée.</li>
+                <li><strong>Ponts dentaires :</strong> Remplacement d'une ou plusieurs dents manquantes en s'appuyant sur les dents adjacentes.</li>
+                <li><strong>Prothèses amovibles :</strong> Appareils dentaires complets ou partiels retirables.</li>
+                <li><strong>Implants dentaires :</strong> Solutions fixes ancrées dans l'os pour un résultat naturel et durable.</li>
+            </ul>
+
+            <h2>Matériaux de qualité</h2>
+            <ul>
+                <li><strong>Zircone :</strong> Matériau biocompatible, esthétique et très résistant.</li>
+                <li><strong>Céramique :</strong> Excellente esthétique pour un rendu naturel.</li>
+                <li><strong>Métal-céramique :</strong> Combinaison de résistance et d'esthétique.</li>
+                <li><strong>Résine :</strong> Pour les prothèses amovibles légères et confortables.</li>
+            </ul>
+
+            <div class="cta-box">
+                <h3><i class="fas fa-teeth" aria-hidden="true"></i> Retrouvez un sourire complet</h3>
+                <p>Des prothèses sur mesure pour restaurer fonction masticatoire et esthétique du sourire.</p>
+                <div class="cta-buttons">
+                    <a href="tel:+213540992708" class="btn btn-primary"><i class="fas fa-phone-alt"></i> Prendre rendez-vous</a>
+                    <a href="https://wa.me/213562528806?text=Bonjour%20I%20Smile%2C%20je%20souhaite%20un%20rendez-vous%20pour%20prothèses." target="_blank" rel="noopener" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="case-study">
+                <h3>Cas clinique : Pont en zircone</h3>
+                <p>Ce patient présentait une dent manquante au niveau de la zone esthétique. Nous avons réalisé un pont en zircone pour un résultat naturel et durable.</p>
+                <div class="case-study-grid">
+                    <img src="pont-zircone-1.webp" alt="Avant - Dent manquante" loading="lazy">
+                    <img src="pont-zircone-2.webp" alt="Pendant - Préparation" loading="lazy">
+                    <img src="pont-zircone-3.webp" alt="Après - Pont en zircone" loading="lazy">
+                </div>
+            </div>
+
+            <div class="case-study">
+                <h3>Cas clinique : Remplacement de pont en zircone</h3>
+                <p>Remplacement d'un ancien pont par un nouveau pont en zircone pour améliorer l'esthétique et la fonction.</p>
+                <div class="case-study-grid">
+                    <img src="pont-zircone-remplacement-1.webp" alt="Avant remplacement" loading="lazy">
+                    <img src="pont-zircone-remplacement-2.webp" alt="Préparation" loading="lazy">
+                    <img src="pont-zircone-remplacement-3.webp" alt="Pose du nouveau pont" loading="lazy">
+                    <img src="pont-zircone-remplacement-4.webp" alt="Résultat final" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Galerie <span class="brand-highlight">Prothèses</span></h2>
+                <p class="section-desc">Exemples de prothèses fixes réalisées avec précision et esthétique.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="prothese-fixe-1.webp" alt="Prothèse fixe - Vue d'ensemble" loading="lazy" decoding="async">
+                    <div class="gallery-caption">Prothèse fixe - Résultat esthétique</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="prothese-fixe-2.webp" alt="Prothèse fixe - Détails" loading="lazy" decoding="async">
+                    <div class="gallery-caption">Détails de la prothèse</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="prothese-fixe-3.webp" alt="Prothèse fixe - Sourire complet" loading="lazy" decoding="async">
+                    <div class="gallery-caption">Sourire restauré avec prothèse</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Besoin d'une prothèse dentaire ?</h2>
+            <p>Consultez-nous pour un diagnostic complet et une solution personnalisée.</p>
+            <div class="hero-actions">
+                <a href="tel:+213540992708" class="btn btn-primary"><i class="fas fa-phone-alt"></i> Appeler maintenant</a>
+                <a href="https://wa.me/213562528806?text=Bonjour%20I%20Smile%2C%20je%20souhaite%20un%20rendez-vous%20pour%20prothèses." target="_blank" rel="noopener" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-content">
+            <p class="footer-credit">Website crafted by <a href="https://gategith.github.io/portfolio/" target="_blank" rel="noopener noreferrer" aria-label="Portfolio de REBAS IFILS">REBAS IFILS</a></p>
+            <p class="footer-tagline">Digital Experiences</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
