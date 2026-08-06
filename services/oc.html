@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Odontologie Conservatrice — I Smile Dental Clinic | Dely Ibrahim</title>
+    <meta name="description" content="Odontologie conservatrice à Dely Ibrahim. Soins des caries, obturations et préservation de la dent naturelle avec des matériaux de qualité.">
+    <link rel="canonical" href="https://YOUR-PRODUCTION-DOMAIN.com/services/oc">
+    <link rel="icon" type="image/png" href="../../images/favicon.png">
+    <meta property="og:title" content="Odontologie Conservatrice — I Smile Dental Clinic">
+    <meta property="og:description" content="Préservation de la dent naturelle grâce aux soins conservateurs modernes.">
+    <meta property="og:image" content="cover.webp">
+    <meta property="og:url" content="https://YOUR-PRODUCTION-DOMAIN.com/services/oc">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#1a3a34">
+    <meta name="robots" content="index, follow">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalBusiness",
+      "name": "I Smile Dental Clinic - Odontologie Conservatrice",
+      "url": "https://YOUR-PRODUCTION-DOMAIN.com/services/oc",
+      "medicalSpecialty": "Dentist",
+      "availableService": {
+        "@type": "MedicalProcedure",
+        "name": "Odontologie Conservatrice"
+      }
+    }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+    <link rel="stylesheet" href="../../css/animations.css">
+    <script defer src="../../js/script.js"></script>
+    <script defer src="../../js/gallery.js"></script>
+    <script defer src="../../js/form.js"></script>
+    <style>
+        .service-hero {
+            position: relative;
+            background: linear-gradient(135deg, #1a3a34 0%, #2d5a52 100%);
+            color: var(--white);
+            padding: 80px 0 60px;
+            text-align: center;
+            overflow: hidden;
+        }
+        .service-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('cover.webp') center/cover no-repeat;
+            opacity: 0.15;
+            z-index: 0;
+        }
+        .service-hero .container {
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+        }
+        .service-hero h1 {
+            font-size: clamp(2rem, 4vw, 2.8rem);
+            margin-bottom: 16px;
+            font-weight: 700;
+        }
+        .service-hero p {
+            font-size: 1.1rem;
+            opacity: 0.95;
+            line-height: 1.6;
+        }
+        .breadcrumb {
+            font-size: 0.95rem;
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 12px;
+        }
+        .breadcrumb a {
+            color: var(--teal);
+            text-decoration: none;
+        }
+        .service-section {
+            padding: 60px 0;
+        }
+        .service-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .service-content h2 {
+            font-size: 1.8rem;
+            color: var(--marble-green);
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        .service-content p {
+            margin-bottom: 16px;
+            line-height: 1.7;
+            color: var(--grey-text);
+        }
+        .service-content ul,
+        .service-content ol {
+            margin: 20px 0;
+            padding-left: 24px;
+        }
+        .service-content li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+            color: var(--grey-text);
+        }
+        .cta-box {
+            background: linear-gradient(135deg, #1a3a34 0%, #2d5a52 100%);
+            color: var(--white);
+            padding: 40px;
+            border-radius: var(--radius-md);
+            margin: 40px 0;
+            text-align: center;
+        }
+        .cta-box h3 {
+            font-size: 1.8rem;
+            margin-bottom: 16px;
+        }
+        .cta-box p {
+            font-size: 1.05rem;
+            margin-bottom: 24px;
+            opacity: 0.95;
+        }
+        .cta-buttons {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .gallery-section {
+            background: var(--stone-light);
+            padding: 60px 0;
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 20px;
+            margin-top: 30px;
+        }
+        @media (min-width: 768px) {
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        .gallery-item {
+            background: var(--white);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: var(--shadow-soft);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            object-position: center;
+            display: block;
+        }
+        .gallery-caption {
+            padding: 16px;
+            text-align: center;
+            font-size: 0.95rem;
+            color: var(--grey-text);
+            font-weight: 500;
+        }
+        .case-study {
+            background: var(--white);
+            border-radius: var(--radius-md);
+            padding: 24px;
+            margin: 30px 0;
+            box-shadow: var(--shadow-soft);
+        }
+        .case-study h3 {
+            font-size: 1.4rem;
+            color: var(--marble-green);
+            margin-bottom: 16px;
+            font-weight: 700;
+        }
+        .case-study-grid {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 16px;
+            margin-top: 20px;
+        }
+        @media (min-width: 768px) {
+            .case-study-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        .case-study-grid img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: var(--radius-sm);
+            display: block;
+        }
+        .cta-section {
+            background: var(--marble-dark);
+            color: var(--white);
+            padding: 60px 0;
+            text-align: center;
+        }
+        .cta-section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 16px;
+        }
+        .cta-section p {
+            font-size: 1.05rem;
+            margin-bottom: 24px;
+            opacity: 0.95;
+        }
+    </style>
+</head>
+<body>
+    
+<header class="header" role="banner">
+    <div class="container header-content">
+        <a href="../../index.html" class="logo-custom" aria-label="I Smile Dental Clinic - Accueil">
+            <img src="../../images/i-smile-logo.png" alt="i-Smile Dental Clinic Logo" class="main-logo-img">
+        </a>
+        <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navMenu">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav class="nav-menu" id="navMenu" aria-label="Navigation principale">
+            <ul>
+                <li><a href="../../index.html#services">Services</a></li>
+                <li><a href="../../index.html#gallery">La Clinique</a></li>
+                <li><a href="../../index.html#contact">Urgences 24h/24</a></li>
+            </ul>
+            <div class="nav-phone-header">
+                <a href="tel:+213540992708" aria-label="Appeler le 05 40 99 27 08"><i class="fas fa-phone-alt"></i> 05 40 99 27 08</a>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<main id="main-content">
+    <section class="service-hero">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="../../index.html">Accueil</a> › <a href="../../index.html#services">Services</a> › Odontologie Conservatrice
+            </nav>
+            <h1>Odontologie Conservatrice</h1>
+            <p>Préservation de la dent naturelle grâce aux soins modernes, traitement des caries et obturations haute qualité.</p>
+        </div>
+    </section>
+
+    <section class="service-section">
+        <div class="container service-content">
+            <h2>Qu'est-ce que l'odontologie conservatrice ?</h2>
+            <p>L'odontologie conservatrice est une spécialité dentaire qui vise à préserver la dent naturelle en traitant les caries et les lésions dentaires sans recourir à l'extraction. Notre objectif est de maintenir la structure dentaire saine tout en restaurant la fonction et l'esthétique de la dent.</p>
+            <p>Nous utilisons des techniques modernes et des matériaux biocompatibles pour garantir des résultats durables et esthétiques.</p>
+
+            <h2>Les traitements conservateurs</h2>
+            <ul>
+                <li><strong>Soins des caries :</strong> Élimination complète de la carie et obturation avec des matériaux composites ou amalgames.</li>
+                <li><strong>Reconstitution coronaire :</strong> Restauration de la forme et de la fonction de la dent après un traitement de carie.</li>
+                <li><strong>Traitement des fissures :</strong> Scellement des fissures profondes pour prévenir les caries.</li>
+                <li><strong>Coiffage pulpaire :</strong> Protection de la pulpe dentaire lors de caries profondes.</li>
+                <li><strong>Meulages sélectifs :</strong> Ajustement des surfaces occlusales pour améliorer la mastication.</li>
+            </ul>
+
+            <h2>Matériaux utilisés</h2>
+            <ul>
+                <li><strong>Composites esthétiques :</strong> Matériaux de haute qualité qui imitent parfaitement l'émail naturel.</li>
+                <li><strong>Amalgames :</strong> Pour les zones soumises à de fortes contraintes de mastication.</li>
+                <li><strong>Céramiques :</strong> Pour des restaurations particulièrement résistantes et esthétiques.</li>
+            </ul>
+
+            <div class="cta-box">
+                <h3><i class="fas fa-tooth" aria-hidden="true"></i> Préservez vos dents naturelles</h3>
+                <p>Des soins conservateurs pour maintenir la santé de vos dents sur le long terme.</p>
+                <div class="cta-buttons">
+                    <a href="tel:+213540992708" class="btn btn-primary"><i class="fas fa-phone-alt"></i> Prendre rendez-vous</a>
+                    <a href="https://wa.me/213562528806?text=Bonjour%20I%20Smile%2C%20je%20souhaite%20un%20rendez-vous%20pour%20soins." target="_blank" rel="noopener" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="case-study">
+                <h3>Cas clinique : Traitement de caries multiples</h3>
+                <p>Ce patient présentait plusieurs caries sur les molaires et prémolaires. Après un diagnostic complet, nous avons procédé à l'élimination des caries et à la restauration des dents avec des composites esthétiques haute qualité.</p>
+                <div class="case-study-grid">
+                    <img src="instagram-carie-1.webp" alt="Avant traitement - Caries" loading="lazy">
+                    <img src="instagram-carie-2.webp" alt="Pendant traitement" loading="lazy">
+                    <img src="instagram-carie-3.webp" alt="Après traitement - Dents restaurées" loading="lazy">
+                </div>
+            </div>
+
+            <h2>Avantages de l'odontologie conservatrice</h2>
+            <ul>
+                <li><strong>Préservation de la dent :</strong> Maintien de la structure dentaire naturelle.</li>
+                <li><strong>Esthétique :</strong> Restaurations invisibles et harmonieuses.</li>
+                <li><strong>Durabilité :</strong> Matériaux résistants pour une longévité optimale.</li>
+                <li><strong>Confort :</strong> Anesthésie locale moderne pour un traitement sans douleur.</li>
+                <li><strong>Économie :</strong> Alternative moins coûteuse que les couronnes ou implants.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="gallery-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Galerie <span class="brand-highlight">OC</span></h2>
+                <p class="section-desc">Exemples de traitements conservateurs réalisés avec précision.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="cover.webp" alt="Odontologie conservatrice - Cabinet" loading="lazy" decoding="async">
+                    <div class="gallery-caption">Cabinet d'odontologie conservatrice</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="gallery-1.webp" alt="Soins conservateurs - Détails" loading="lazy" decoding="async">
+                    <div class="gallery-caption">Soins conservateurs en cours</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="gallery-2.webp" alt="Résultat après obturation" loading="lazy" decoding="async">
+                    <div class="gallery-caption">Dents restaurées avec composites</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Besoin de soins conservateurs ?</h2>
+            <p>Consultez-nous pour un diagnostic complet et un plan de traitement personnalisé.</p>
+            <div class="hero-actions">
+                <a href="tel:+213540992708" class="btn btn-primary"><i class="fas fa-phone-alt"></i> Appeler maintenant</a>
+                <a href="https://wa.me/213562528806?text=Bonjour%20I%20Smile%2C%20je%20souhaite%20un%20rendez-vous%20pour%20soins." target="_blank" rel="noopener" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-content">
+            <p class="footer-credit">Website crafted by <a href="https://gategith.github.io/portfolio/" target="_blank" rel="noopener noreferrer" aria-label="Portfolio de REBAS IFILS">REBAS IFILS</a></p>
+            <p class="footer-tagline">Digital Experiences</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
